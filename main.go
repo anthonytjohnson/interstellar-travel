@@ -36,12 +36,25 @@ func cantFly() {
 }
 
 // Create the function flyToPlanet() here
+func flyToPlanet(planet string, fuel int) int {
+	var fuelRemaining, fuelCost int
+	fuelRemaining = fuel
+	fuelCost = calculateFuel(planet)
+	if fuelRemaining >= fuelCost {
+		greetPlanet(planet)
+		fuelRemaining -= fuelCost
+	} else {
+		cantFly()
+	}
+	return fuelRemaining
+}
 
 func main() {
 	// Test your functions!
 	fuelGauge(86)
 	calculateFuel("Venus")
 	greetPlanet("Venus")
+	cantFly()
 	// Create `planetChoice` and `fuel`
 
 	// And then liftoff!
