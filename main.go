@@ -26,6 +26,9 @@ func calculateFuel(planet string) int {
 }
 
 // Create the function greetPlanet() here
+func greetPlanet(planet string) {
+	fmt.Println("Welcome to", planet, "!!")
+}
 
 // Create the function cantFly() here
 
@@ -35,6 +38,7 @@ func main() {
 	// Test your functions!
 	fuelGauge(86)
 	calculateFuel("Venus")
+	greetPlanet("Venus")
 	// Create `planetChoice` and `fuel`
 
 	// And then liftoff!
