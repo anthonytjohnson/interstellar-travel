@@ -51,12 +51,14 @@ func flyToPlanet(planet string, fuel int) int {
 
 func main() {
 	// Test your functions!
-	fuelGauge(86)
-	calculateFuel("Venus")
-	greetPlanet("Venus")
-	cantFly()
+	// fuelGauge(86)
+	// calculateFuel("Venus")
+	// greetPlanet("Venus")
+	// cantFly()
 	// Create `planetChoice` and `fuel`
-
+	fuel := 1000000
+	planetChoice := "Venus"
 	// And then liftoff!
-
+	flyToPlanet(planetChoice, fuel)
+	fuelGauge(fuel)
 }
