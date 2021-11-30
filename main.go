@@ -31,6 +31,9 @@ func greetPlanet(planet string) {
 }
 
 // Create the function cantFly() here
+func cantFly() {
+	fmt.Println("We do not have the available fuel to fly there.")
+}
 
 // Create the function flyToPlanet() here
 
